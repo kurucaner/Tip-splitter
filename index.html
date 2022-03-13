@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+  <main>
+    <img src="images/logo.svg" alt="logo" aria-hidden="true">
+    <div class="container">
+      <div class="box">
+        <div class="left">
+          <div class="bill">
+            <img src="images/icon-dollar.svg" class="input-icon" alt="dollar-icon" aria-hidden="true">
+            <span class="section-title">Bill</span>
+            <form>
+              <input type="text" placeholder="0" id="bill_input" class="bill_input">
+            </form>
+          </div>
+          <div class="tip-select">
+            Select Tip %
+            <p>
+              <button class="button-tip">5%</button>
+              <button class="button-tip">10%</button>
+              <button class="button-tip button-active">15%</button>
+            <p>
+              <button class="button-tip"> 25%</button>
+              <button class="button-tip">50%</button>
+              <input type="text" placeholder="Custom" class="input-custom">
+              <!-- <button class="button-custom">Custom</button> -->
+            </p>
+            </p>
+          </div>
+          <div class="number-of-people">
+            <img src="images/icon-person.svg" class="input-icon" alt="person-icon" aria-hidden="true">
+            <span class="section-title"> Number of People</span>
+            <span class="alert-text">Can't be zero</span>
+            <form>
+              <input type="text" placeholder="0" id="people_input" class="people_input">
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <div class="tip-amount">
+            <div class="tip-amount-left">
+              Tip Amount
+              <p class="no-margin">/ person</p>
+            </div>
+            <div class="tip-amount-right">
+              <span class="money-text" id="tip_amount_output">$0.00</span>
+            </div>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount-left">
+              Total
+              <p class="no-margin">/ person</p>
+            </div>
+            <div class="total-amount-right">
+              <span class="money-text" id="total_amount_output">$0.00</span>
+            </div>
+          </div>
+          <button class="button-reset" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
